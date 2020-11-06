@@ -1,7 +1,13 @@
+
+
+
+// 샘플 URL
+//http://swopenapi.seoul.go.kr/api/subway/sample/xml/realtimeStationArrival/0/5/%EC%84%9C%EC%9A%B8
+
 const String _urlPrefix = 'http://swopenapi.seoul.go.kr/api/subway/';
 const String _userKey = 'sample';
-const String _urlSuffix = '/json/realtimeStationArrival/0/5/';
-const String defaultStation = '광화문';
+const String _urlSuffix = '/json/realtimeStationArrival/0/3/';
+const String defaultStation = '서울';
 
 const int STATUS_OK = 200;
 

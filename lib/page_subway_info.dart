@@ -4,10 +4,22 @@ import 'dart:convert';
 import 'model/subway_arrival.dart';
 import 'api/subway_api.dart' as api;
 
+
+
+/*
+     -----------------------------------------------------------------
+      주소록 상세 화면
+     -----------------------------------------------------------------
+*/
+
+
+
 class MainPage extends StatefulWidget {
   @override
   State createState() => MainPageState();
 }
+
+
 
 class MainPageState extends State<MainPage> {
   TextEditingController _stationController =
@@ -16,7 +28,10 @@ class MainPageState extends State<MainPage> {
   bool _isLoading = false;
 
   List<Card> _buildCards() {
+
+    print('--------------------------------------------------------');
     print('>>> _data.length? ${_data.length}');
+    print('--------------------------------------------------------');
 
     if (_data.length == 0) {
       return <Card>[];
@@ -133,7 +148,7 @@ class MainPageState extends State<MainPage> {
                   height: 50,
                   child: Row(
                     children: <Widget>[
-                      Text('역 이름'),
+                      Text('지하철역 '),
                       SizedBox(
                         width: 10,
                       ),

@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'page_subway_info.dart';
 
+
+/*
+     -----------------------------------------------------------------
+      주소록 상세 화면
+     -----------------------------------------------------------------
+ */
+
+
 void main() => runApp(SubwayDemo());
 
 class SubwayDemo extends StatelessWidget {
